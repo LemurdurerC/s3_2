@@ -34,17 +34,17 @@ try:
     s3.upload_fileobj(in_mem_file,'dataset-fyc', Key='t.jpeg', ExtraArgs={
     'ACL': 'public-read'
 })
-    print("ici2")
-    print("Upload Successful")
-    return True
-except FileNotFoundError:
-    print("The file was not found")
-    return False
-except NoCredentialsError:
-    print("Credentials not available")
-    return False            
-except Exception as e:
-    print(e)
+    # print("ici2")
+    # print("Upload Successful")
+    # return True
+# except FileNotFoundError:
+    # print("The file was not found")
+    # return False
+# except NoCredentialsError:
+    # print("Credentials not available")
+    # return False            
+# except Exception as e:
+    # print(e)
 
 
 
