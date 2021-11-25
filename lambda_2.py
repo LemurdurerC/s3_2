@@ -28,11 +28,11 @@ print("in_mem_file.seek(0)")
 s3 = boto3.client('s3', aws_access_key_id=ACCESS_KEY,
                   aws_secret_access_key=SECRET_KEY)
 print(" in_mem_file.seek(0)")
-try:
-    print("ici")
-    #s3.put_object(Body=buffer, Bucket='dataset-fyc', Key='t.jpeg',  ContentType='image/jpeg')
-    s3.upload_fileobj(in_mem_file,'dataset-fyc', Key='t.jpeg', ExtraArgs={
-    'ACL': 'public-read'
+
+print("ici")
+#s3.put_object(Body=buffer, Bucket='dataset-fyc', Key='t.jpeg',  ContentType='image/jpeg')
+s3.upload_fileobj(in_mem_file,'dataset-fyc', Key='t.jpeg', ExtraArgs={
+'ACL': 'public-read'
 })
     # print("ici2")
     # print("Upload Successful")
