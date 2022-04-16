@@ -9,8 +9,6 @@ import base64
 from PIL import Image
 from botocore.exceptions import NoCredentialsError
 
-ACCESS_KEY = 'AKIASBQJGICSOVK2CP3Z'
-SECRET_KEY = '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'
 
 
 s3 = boto3.client('s3')
